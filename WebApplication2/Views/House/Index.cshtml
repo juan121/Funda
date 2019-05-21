@@ -1,0 +1,87 @@
+﻿@model WebApplication2.Models.HouseViewModel
+@*@model WebApplication2.Models.DetailInfo*@
+
+@{
+    ViewBag.Title = "Index";
+}
+@section Scripts {
+    <script type="text/javascript" src="~/Scripts/MediaItems.js"></script>
+}
+<h2>Index</h2>
+
+<div>
+    <h4>HouseViewModel</h4>
+    <hr />
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="form-group has-feedback">
+                @Html.DisplayNameFor(model => model.Bouwjaar)
+                @Html.DisplayFor(model => model.Bouwjaar)
+            </div>
+        </div>
+    </div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Bouwjaar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bouwjaar)
+        </dd>
+
+    </dl>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.detailInfo.HasPromotionLabel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.detailInfo.HasPromotionLabel)
+        </dd>
+
+    </dl>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.detailInfo.PromotionLabelType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.detailInfo.PromotionLabelType)
+        </dd>
+
+    </dl>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.detailInfo.RibbonColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.detailInfo.RibbonColor)
+        </dd>
+
+    </dl>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.detailInfo.RibbonText)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.detailInfo.RibbonText)
+        </dd>
+
+    </dl>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.detailInfo.Tagline)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.detailInfo.Tagline)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

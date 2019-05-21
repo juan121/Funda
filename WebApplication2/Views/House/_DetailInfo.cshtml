@@ -1,0 +1,30 @@
+﻿@model WebApplication2.Models.DetailInfoModel
+
+@{
+    ViewBag.Title = "DetailInfo";
+}
+
+<h2>Index</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HasPromotionLabel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bouwjaar)
+        </dd>
+
+    </dl>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.detailInfo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.detailInfo)
+        </dd>
+
+    </dl>
+</div>
