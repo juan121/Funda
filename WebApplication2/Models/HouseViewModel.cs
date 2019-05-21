@@ -9,5 +9,7 @@ namespace WebApplication2.Models
     {
         public string Bouwjaar { get; set; }
        public DetailInfoModel detailInfo { get; set; }
+
+        public List<MediaModel> media { get; set; }
     }
 }   

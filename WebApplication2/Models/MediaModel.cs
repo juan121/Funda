@@ -7,10 +7,7 @@ namespace WebApplication2.Models
 {
     public class MediaModel
     {
-        public int Category { get; set; }
-        public int Height { get; set; }
-        public int Width { get; set; }
-
-        public string Url { get; set; }
+        public Guid Id { get; set; }
+        public MediaItemsModel[] mediaItems { get; set; }
     }
 }

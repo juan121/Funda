@@ -163,6 +163,7 @@
     </Compile>
     <Compile Include="Models\DetailInfoModel.cs" />
     <Compile Include="Models\HouseViewModel.cs" />
+    <Compile Include="Models\MediaItemsModel.cs" />
     <Compile Include="Models\MediaModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

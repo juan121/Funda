@@ -14,6 +14,10 @@ namespace WebApplication2.Controllers
 {
     public class HouseController : Controller
     {
+        private struct result
+        {
+            
+        }
         const string baseAddress = "http://partnerapi.funda.nl";
         const string requestUrl = "/feeds/Aanbod.svc/json/detail/ac1b0b1572524640a0ecc54de453ea9f/koop/6289a7bb-a1a8-40d5-bed1-bff3a5f62ee6";
         public async System.Threading.Tasks.Task<ActionResult> Index()
@@ -42,12 +46,7 @@ namespace WebApplication2.Controllers
         [HttpGet]
         public JsonResult GetMediaItems()
         {
-            var avgWPBA = decimal.Parse("0");
-            var numWPBA = 0;
-
-            var res = new result() { numWPBAPerCAPA = numWPBA, avgWPBAPerCAPA = avgWPBA };
-
-            return new JsonResult { Data = res, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
+            return new JsonResult { Data = null, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
 
         }
     }
